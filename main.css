@@ -1,0 +1,281 @@
+html{
+    height:100%;
+
+}
+
+body{
+    height:100%;
+    margin:0px;
+    background-color: gray;
+}
+
+@font-face {
+    font-family: "lastica";
+    src: url("./fonts/FontsFree-Net-Lastica.ttf");
+}
+
+@font-face {
+    font-family: "TheSeasons";
+    src: url("./fonts/The_seasons/Fontspring-DEMO-theseasons-bdit.otf");
+}
+.header{
+    width:100%;
+    height:13%;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    top:0%;
+    left:0%;
+    z-index: 100;
+
+}
+
+#logo{
+    width:3%;
+   height:50%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+#title{
+    line-height: 0.2vw;
+    height:76%;
+    width:30%;
+    margin-left: 3%;
+    margin-top:1.2% ;
+   
+    
+   
+}
+
+#title h2{
+    font-size: 2.5vw;
+    font-family: "TheSeasons";
+    color:#1a4789;
+}
+
+#title h4{
+    font-size: 1vw;
+    font-family: "Libre Baskerville";
+    color:rgb(63, 63, 63);
+    font-weight: lighter;
+}
+
+.menu{
+    
+    width:57%;
+    margin-left:1%;
+    margin-top:3.5%;
+   
+    height:55%;
+}
+
+.menu li{
+    list-style-type: none;
+    float:left;
+    margin-left: 4%;
+    font-size: 1.25vw;
+
+
+    font-family:calibri;
+    color:rgb(63, 63, 63);
+    font-family: "lastica";
+    letter-spacing: 0.1vw;
+    transition: 0.2s;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    color:rgb(87, 71, 233);
+    font-weight: bold;
+}
+
+#div-bg{
+    height:87%;
+    width:100%;
+    position: absolute;
+    top:13%;
+    left:0%;
+    background-image: url(./images/marconi1.jpg);
+    background-position: center top;
+    z-index: 99;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#esplora{
+    width:100%;
+    height:100%;
+    background-color: rgba(131, 130, 99, 0.27);
+}
+
+#esplora button{
+    width:21%;
+    font-family: "Lato";
+    font-size: 1.5vw;
+    height:7%;
+    margin-top:23%;
+    margin-left:39.5%;
+    background-color: rgba(41, 41, 41, 0.27);;
+    border:0.2vw solid white;
+    color:white;
+    transition: 0.2s;
+   
+}
+
+#esplora button:hover{
+    background-color: rgba(14, 14, 14, 0.4);
+    box-shadow: 0vw 0vw 0.5vw 0vw black;
+    cursor: pointer;
+
+}
+
+.content{
+    width:100%;
+    height:fit-content;
+    background-size: cover;
+    background-position: center top;
+    
+    
+}
+
+.testo{
+    width:80%;
+    background-color: rgb(26, 71, 137,0.7);
+    background-attachment: fixed;
+    padding:10%;
+}
+
+.content-title{
+    width:100%;
+    height:10vw;
+    
+    text-align: center;
+    display: block;
+    white-space: nowrap; 
+}
+
+.content-title span{
+    position: relative;
+    display: inline-block;
+    font-size: 3vw;
+    font-family: "Lastica";
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    color:white;
+}
+
+.content-title > span:before,
+.content-title > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30vw;
+    height: 0.15vw;
+    background: rgb(255, 255, 255);
+}
+
+.content-body{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+.content-title > span:before {
+    right: 100%;
+    margin-right: 10% ;
+}
+
+.content-title > span:after {
+    left: 100%;
+    margin-left: 10%;
+}
+
+.image{
+    width:36.5%;
+    height:fit-content;
+    background-color: rgb(5,49,114,0.8);
+    padding: 3%;
+    border-radius: 3vw;
+    margin-top: 4%;
+    
+
+}
+
+.image img{
+    width:100%;
+    height:20vw;
+}
+
+.image-testo{
+    width:45%;
+    height:20vw;
+    background-color: rgb(5,49,114,0.8);
+    padding: 3%;
+    border-radius: 3vw;
+    margin-left: 5%;
+    margin-top: 4%;
+    color:white;
+    font-family:"lato";
+}
+
+/*da qui cominciano le modifiche*/
+
+.video{
+    width:100%;
+    height:fit-content;
+    background-color: rgb(5,49,114,0.8);
+    padding: 3%;
+    border-radius: 3vw;
+}
+
+.video-testo{
+    width:100%;
+    height:fit-content;
+    background-color: rgb(5,49,114,0.8);
+    padding: 3%;
+    border-radius: 3vw;
+    margin-top: 4%;
+    color: white;
+    font-family: "lato";
+}
+
+.content-subtitle{
+    width:100%;
+    height:5vw;
+    
+    text-align: center;
+    display: block;
+    white-space: nowrap; 
+}
+
+.content-subtitle span{
+    position: relative;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: "Lastica";
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    color:white;
+}
+
+.content-subtitle > span:before,
+.content-subtitle > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 10vw;
+    height: 0.15vw;
+    background: rgb(255, 255, 255);
+}
+.content-subtitle > span:before {
+    right: 100%;
+    margin-right: 10% ;
+}
+
+.content-subtitle > span:after {
+    left: 100%;
+    margin-left: 10%;
+}
